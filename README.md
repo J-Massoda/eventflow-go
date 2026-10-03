@@ -8,6 +8,10 @@ For example, an online store records an order. EventFlow accepts the `order.crea
 
 This is an independent demonstration, not a payment processor or customer integration. Demo events are fictional. It makes **at-least-once** delivery attempts; the receiver must deduplicate using the stable `Idempotency-Key` / event ID. It does not promise exactly-once effects or per-source strict ordering.
 
+## Publish the portfolio walkthrough
+
+[`docs/index.html`](docs/index.html) is a standalone, fictional browser walkthrough. Publish the repository's `/docs` folder through GitHub Pages using **Settings → Pages → Deploy from a branch**. It illustrates event intake, a temporary failure, a retry and duplicate handling. It does not run the Go server or call a real receiver. Use the local demo below to test the actual HTTP service.
+
 ## Two ways to run it
 
 | Mode | Purpose | Storage | Prerequisites |
